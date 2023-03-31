@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Grid Practice</title>
+
+    <style>
+        p {
+            font-family: Arial;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            background-color: blueviolet;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            
+        }
+        .home {
+            color: white;
+            font-size: 14px;
+            font-weight: bolder;
+            font-family: Arial;
+        }
+
+        .search {
+            max-width: 500px;
+            min-width: fit-content;
+        }
+        .search-bar {
+            width: 500px;
+            border: none;
+            border-radius: 18px;
+            padding-top: 8px;
+            padding-left: 18px;
+            padding-bottom: 8px;
+        }
+
+        .download-button {
+            background-color: blueviolet;
+            border: white;
+            border-width: 1px;
+            border-style: solid;
+            color: white;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 14px;
+            padding-right: 14px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="home">
+                Home
+        </div>
+        <div class="search">
+                <input type="text" placeholder="Search" class="search-bar">
+        </div>
+        <div class="button">
+                <button class="download-button">
+                    Download
+                </button>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Quick Reference</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      padding: 0;
+    }
+  
+    input[type="text"] {
+      width: 50%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 25px;
+      font-size: 16px;
+      background-position: 10px 10px;
+      background-repeat: no-repeat;
+      padding-left: 40px;
+      transition: 0.3s;
+    }
+  
+    input[type="text"]:focus {
+      border-color: #3a8dfd;
+      background-color: #6faeff;
+      border-radius: 25px;
+      outline: none;
+
+    }
+
+    input[type="text"]:hover {
+        border-color: #aff2ff;
+        background-color: #aff2ff;
+        border-radius: 50px;
+        background-image: href;
+
+    }
+  
+    title {
+      text-align: center;
+      padding: 20px;
+    }
+  
+    ul {
+      padding: 0;
+    }
+  
+    li {
+      list-style-type: none;
+      padding: 10px;
+      font-size: 18px;
+    }
+
+    .search-icon {
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 20px;
+        pointer-events: none;
+    }
+
+    .search-container {
+        position: relative;
+      }
+  </style>
+</head>
+<body>
+  <h1>HTML Quick Reference</h1>
+  <h2>A quick find for anything HTML</h2>
+  <div>
+  <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Search for an item...">
+  <i class="fa fa-search search-icon">
+  </i>
+  </div>
+  <ul id="myList">
+    <h3>HTML Headings</h3>
+    <li><h1>Header 1</h1>
+        <p> Simply use h1 </p>
+    </li>
+    <li><h2>Header 2</h2>
+        <p> Simply use h2 </p>
+    </li>
+    <li><h3>Header 3</h3>
+        <p> Simply use h3 </p>
+    </li>
+    <li><h4>Header 4</h4>
+        <p> Simply use h4 </p>
+    </li>
+    <li><h5>Header 5</h5>
+        <p> Simply use h5 </p>
+    </li>
+    <li><h6>Header 6</h6>
+        <p> Simply use h6 </p>
+    </li>
+    <!-- Add more list items as needed -->
+  </ul>
+
+  <script>
+    function searchFunction() {
+      const input = document.getElementById("searchInput");
+      const filter = input.value.toUpperCase();
+      const list = document.getElementById("myList");
+      const items = list.getElementsByTagName("li");
+  
+      for (let i = 0; i < items.length; i++) {
+        const textValue = items[i].textContent || items[i].innerText;
+        if (textValue.toUpperCase().includes(filter)) {
+          items[i].style.display = "";
+        } else {
+          items[i].style.display = "none";
+        }
+      }
+    }
+  </script>
+</body>
+</html>

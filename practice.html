@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+            margin-bottom: 1000px;
+        }
+        .google {
+            text-align: center;
+        }
+
+        .logo {
+            display: inline-block;
+            width: 300px;
+            height: 30px;
+            text-align: center;
+        }
+
+        .search-bar {
+            width: 400px;
+            height: 30px;
+            border: none;
+            border-radius: 18px;
+            box-shadow: 0 0 15px rgba(128, 128, 128, 0.25);
+            margin-bottom: 20px;
+            margin-top: 10px;
+            padding-left: 15px;
+            font-size: 10px;
+        }
+        .search-bar:focus {
+            border: none;
+
+        }
+
+        .google-search {
+            background-color: #efefef;
+            text-align: center;
+            border: none;
+            display: inline-block;
+            margin: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            transition: all 0.15s;
+        }
+       
+
+        .lucky {
+            display: inline-block;
+            text-align: center;
+            background-color: #efefef;
+            border: none;
+            margin: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        
+        .tweet {
+            border: none;
+            border-radius: 6px;
+            text-align: center;
+            box-shadow: 0 0 5px rgba(128, 128, 128, 0.25);
+            width: 450px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+
+        .cat {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 25px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        .button {
+            background-color: rgb(2, 158, 255);
+            color: white;
+            border: none;
+            margin-left: auto;
+            border-radius: 18px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: [pointer];
+            transition: box-shadow .015s;
+            padding: 10px;
+            padding-left: 15px;
+            padding-right: 15px;       
+        }
+        
+        .button:hover {
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15)          
+        }
+
+        .tweet-box {
+            font-size: 18px;
+            border: none;
+            width: 300px;
+            vertical-align: middle;
+            transition: all 0.18s;
+        }
+
+        .tweet-box:active {
+            border: none;
+            outline: none;
+        }
+        .tweet-box:focus {
+            border: none;
+            outline: none;
+        }
+
+        .card {
+            display: inline-block;
+            object-fit: fill;
+            width: 200px;
+            text-align: left;
+            border: none;
+            border-radius: 2px;
+            box-shadow: 0 2px 5px rgba(128, 128, 128, 0.25);
+            margin-top: 10px;
+            margin-right: 0;
+            margin-left: 10px;
+        }
+
+        .profile-image {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .name {
+            font-family: Arial;
+            font-size: 14px;
+            font-weight: bold;
+            margin-left: 10px;
+            margin-bottom: 0;
+        }
+
+        .friend-count {
+            display: inline-block;
+            font-family: Arial;
+            font-size: 10px;
+            color: rgb(182, 182, 183);
+            margin-left: 10px;
+            margin-top: 5px;
+        }
+
+        .add-friend {
+            background-color: rgb(2, 158, 255);
+            width: 100px;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            padding: 5px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+
+        .mutual-pic {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border: none;
+            border-radius: 50%;
+            vertical-align: middle;
+            text-align: center;
+            margin: 10px;
+            margin-right: 0;
+        }
+
+        .mutual {
+            vertical-align: middle;
+            text-align: center;
+            display: inline-block;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+            width: fit-content;
+            column-gap: 20px;
+            align-items: center;
+
+        }
+
+        .wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 30px;
+            background-color: lightblue;
+            width: fit-content;
+         
+            
+        }
+
+        .item {
+            display: flex;
+            width: 100px;
+            height: 40px;
+            background-color: lightblue;
+            align-items: center;
+            justify-content: center;
+        }
+        .item_dos {
+            width: 200px;
+            height: 40px;
+            background-color: lightpink;
+        }
+        .item-text {
+            background-color: black;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="google">
+        <div class="logo">
+        <img src="images\google_logo.svg" alt="google logo">
+        </div>
+
+        <div>
+            <input type="text" class="search-bar" placeholder="Search Google or type a URL">
+        </div>
+
+        <div>
+            <button class="google-search">
+                Google Search
+            </button>
+            <button class="lucky">
+                I'm Feeling Lucky
+            </button>
+        </div>
+
+        <div>
+            
+        </div>
+    </div>
+
+    <div class="tweet">
+            <img  class="cat" id:"kitty" src="images\cat.jpg" alt="Cat">
+            <input type="text" class="tweet-box" placeholder="What's happening?">
+            <button class="button">
+                Tweet
+            </button>
+    </div>
+    
+        <div class="card">
+            <img class="profile-image" src="images\cat.jpg" alt="Cat">
+            <p class="name">
+                Oliver
+            </p>
+            <p class="friend-count">
+                2 mutual friends
+            </p>
+            <button class="add-friend">
+                Add Friend
+            </button>
+        </div>
+        
+            <div class="card-grid">
+                <div class="card">
+                    <img class="profile-image" src="images\cat.jpg" alt="Cat">
+                    <p class="name">
+                        Oliver
+                    </p>
+                    
+                    <div class:"mutual">
+                        <img src="images\cat.jpg" alt="profile" class="mutual-pic">
+                        <p class="friend-count">
+                            2 mutual friends
+                        </p>
+                    </div>
+                    <button class="add-friend">
+                        Add Friend
+                    </button>
+                </div>   
+                <div class="card">
+                    <img class="profile-image" src="images\cat2.jpg" alt="Cat">
+                    <p class="name">
+                        Mimi
+                    </p>
+                    <img src="images\cat.jpg" alt="profile" class="mutual-pic">
+                    <p class="friend-count">
+                        3 mutual friends
+                    </p>
+                    <button class="add-friend">
+                        Add Friend
+                    </button>
+                </div> 
+                <div class="card">
+                    <img class="profile-image" src="images\dog.jpg" alt="Cat">
+                    <p class="name">
+                        Rex
+                    </p>
+                    <img src="images\cat.jpg" alt="profile" class="mutual-pic">
+                    <p class="friend-count">
+                        4 mutual friends
+                    </p>
+                    <button class="add-friend">
+                        Add Friend
+                    </button>
+                </div>  
+            </div>
+    
+    <div class="wrapper">
+        <div class="item">
+            <div class="item-text">
+                item1
+            </div>
+        </div>
+        <div class="item_dos">
+
+        </div>
+    </div>
+    
+</body>
+</html>

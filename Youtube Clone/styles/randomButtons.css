@@ -1,0 +1,192 @@
+.subscribe {
+    background-color: rgb(200, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: opacity 0.15s;
+    padding: 10px;
+
+}
+
+.subscribe:hover {
+    opacity: .8;
+
+}
+
+.subscribe:active {
+    opacity: 0.5;
+    transition: 2ms;
+}
+
+.join {
+    background-color: white;
+    border-color: rgb(41, 118, 211);
+    color: rgb(41, 118, 211);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5%;
+    margin-left: auto;
+    cursor: pointer;
+    transition: background-color .015s, color .0.15s;
+    padding: 10px;
+}
+
+.join:hover {
+    background-color: rgb(41, 118, 211);
+    color: white;
+    
+}
+
+.join:active {
+    opacity: 0.7;
+}
+
+.tweet {
+    background-color: rgb(2, 158, 255);
+    color: white;
+    border: none;
+    margin-left: auto;
+    border-radius: 18px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: [pointer];
+    transition: box-shadow .015s;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+.tweet:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15)
+    
+}
+
+.btn_exercises {
+    margin-top: 20px;
+}
+
+.Uber {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+    padding-right: 15px;
+    cursor: pointer;
+    transition: opacity 0.15s;
+}
+
+.Uber:hover {
+    opacity: .8;
+}
+
+.Amazon {
+    background-color: gold;
+    color: black;
+    border: none;
+    border-radius: 18px;
+    font-weight: bold;
+    transition: opacity 0.15s;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.Amazon:hover {
+    background-color: rgb(246, 209, 0);
+}
+
+.GitHub {
+    background-color: rgb(79, 177, 79);
+    color: white;
+    font-weight: bolder;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    cursor: pointer;
+    transition: box-shadow 0.15s;
+}
+
+.GitHub:hover {
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.15);
+}
+
+.Bootstrap-get-started {
+    background-color: darkslateblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bolder;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: background-color 0.15s, color 0.15s;
+
+}
+.Bootstrap-get-started:hover {
+    background-color: rgb(59, 50, 115);
+}
+
+#back {
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    margin-right: 5px;
+}
+
+.page-num {
+    margin-right: 5px;
+}
+
+#forward {
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    margin-left: 5px;
+
+}
+
+footer {
+    margin-top: 25px;
+}
+
+.stretch {
+    background-color: green;
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 20px;
+    transition: all 0.5s;
+
+}
+
+.stretch:hover {
+    padding: 30px;
+}
+.shadow-click {
+    background-color: green;
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 8px;
+    transition: all 0.5s;
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.20);
+    transition: all 0.15;
+
+}
+
+.shadow-click:active {
+    box-shadow: none;
+    margin-top: 30px;
+    margin-left: 15px;
+}
