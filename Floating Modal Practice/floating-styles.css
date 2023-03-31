@@ -1,0 +1,59 @@
+body {
+    height:  3000px;
+}
+.right-sidebar {
+    background-color: green;
+    color: white;
+    position: fixed;
+    top: 0;
+    bottom: 0px;
+    right: 0px;
+    width: 100px;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+}
+
+.modal-title {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: arial;
+    margin-left: 20px;
+    margin-top: 20px;
+
+}
+.modal-body {
+    font-size: 20px;
+    font-weight: normal;
+    font-family: arial;
+    margin-left: 20px;
+    margin-top: 20px;
+
+}
+.button {
+    font-size: 20px;
+    font-weight: normal;
+    font-family: arial;
+    margin-left: 20px;
+    margin-top: 20px;
+
+}
