@@ -2,7 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const request = require("request");
 const app = express();
-const apiKey = 'e756547c61f18cf2752b0341891f327b-us21';
+const apiKey = '{yourKey}';
 const https = require("https");
 
 app.use(express.static("public"));
@@ -35,7 +35,7 @@ app.post("/", (req,res)=>{
     const url = "https://us21.api.mailchimp.com/3.0/lists/89855e8f06"
     const options = {
     method: "POST",
-    auth: "johnpad:e756547c61f18cf2752b0341891f327b-us21"
+    auth: "johnpad:{apiKey}"
 }
     const request = https.request(url, options, (response)=>{
 
